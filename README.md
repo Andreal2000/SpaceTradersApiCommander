@@ -1,1 +1,1 @@
-# SpaceTradingApiCommander
+# SpaceTradersApiCommander
