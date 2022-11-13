@@ -74,8 +74,8 @@ print(x.text)
 #
 # https://api.spacetraders.io/my/purchase-orders POST Place a new purchase order (shipId & good & quantity)
 #
-# https://api.spacetraders.io/my/sell-orders POST Place a new sell order (shipId & good & quantity)
-#
+# https://api.spacetraders.io/my/sell-orders POST Place a new sell order (shipId & good & quantity) 
+
 # SHIPS
 #
 # https://api.spacetraders.io/my/ships POST Buy a new ship (location & type)
