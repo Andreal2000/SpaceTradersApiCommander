@@ -1,0 +1,81 @@
+{
+  "domain": "https://api.spacetraders.io/",
+  "endpoints": [
+    {
+      "http_method": "POST",
+      "endpoint": "users/{}/claim",
+      "url_params": ["username"],
+      "body_params": [],
+      "method_name": "get_token",
+      "method_docs": "Claim a username and get a token"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "game/status",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "server_status",
+      "method_docs": "Use to determine whether the server is alive"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "game/leaderboard/net-worth",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "top_player_net_worth",
+      "method_docs": "Use to see the current net worth of the top players"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "my/account/",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_account_information",
+      "method_docs": "Get information on your account"
+    },
+
+    { "COMMENT": "FLIGHT PLANS" },
+    {
+      "http_method": "GET",
+      "endpoint": "my/flight-plans/{}",
+      "url_params": ["flight_plan_id"],
+      "body_params": [],
+      "method_name": "get_existing_flight_plan",
+      "method_docs": "Get info on an existing flight plan"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/flight-plans",
+      "url_params": [],
+      "body_params": ["ship_id", "destination"],
+      "method_name": "submit_new_flight_plan",
+      "method_docs": "Submit a new flight plan"
+    },
+
+    { "COMMENT": "LOANS" },
+    {
+      "http_method": "GET",
+      "endpoint": "my/loans",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_your_loans",
+      "method_docs": "Get your loans"
+    },
+    {
+      "http_method": "PUT",
+      "endpoint": "my/loans/{}",
+      "url_params": ["loan_id"],
+      "body_params": [],
+      "method_name": "pay_off_your_loan",
+      "method_docs": "Pay off your loan"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/loans/{}",
+      "url_params": [],
+      "body_params": ["type"],
+      "method_name": "take_out_a_loan",
+      "method_docs": "Take out a loan"
+    }
+  ]
+}
