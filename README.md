@@ -1,6 +1,7 @@
 # SpaceTradersApiCommander
 
 ## Contents
+
 * [Space Traders API](#space-traders-api)
   * [Official Link](#official-link)
   * [Community Link](#community-link)
@@ -41,6 +42,7 @@
 * [Vocivos](https://github.com/kurt1288/Vocivos) - A browser-based web interface built with React.
 
 #### SDKs
+
 * [MerchantExpanse](https://github.com/Oronar/MerchantExpanse) - A .NET 5 API wrapper.
 * [space_trader](https://github.com/HOWZ1T/space_trader) - An Golang api wrapper with internal caching and an event system.
 * [SpaceMongers](https://github.com/ericgroom/space_mongers) - Elixir API wrapper with integrated rate limiting.
@@ -49,10 +51,12 @@
 * [SpacePyTraders](https://github.com/ZacHooper/spacePyTraders) - A Python SDK.
 
 #### Assets
+
 * [Manufacturer Logos](https://github.com/bknyn/spacetraders-manufacturers-logos) - SVG logos for ship manufacturers
 
 ### Our Useful Link
 
 #### Algorithms
+
 * [A Genetic Algorithm for Ship Routing and Scheduling Problem with Time Window](https://www.researchgate.net/publication/276524887_A_Genetic_Algorithm_for_Ship_Routing_and_Scheduling_Problem_with_Time_Window)
 * [Metaheuristic algorithm for ship routing and scheduling problems with time window](https://www.tandfonline.com/doi/full/10.1080/23311975.2019.1616351?scroll=top&needAccess=true)
