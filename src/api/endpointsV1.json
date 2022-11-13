@@ -1,0 +1,13 @@
+{
+    "domain": "https://api.spacetraders.io/",
+    "endpoints": [
+        {
+            "http_method": "GET",
+            "endpoint": "my/account/",
+            "url_params": [],
+            "body_params": [],
+            "method_name": "getAccountInfo",
+            "method_docs": "Get information on your account"
+        }
+    ]
+}
