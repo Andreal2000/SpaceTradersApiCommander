@@ -1,0 +1,253 @@
+{
+  "domain": "https://api.spacetraders.io/",
+  "endpoints": [
+    {
+      "http_method": "POST",
+      "endpoint": "users/{username}/claim",
+      "url_params": ["username"],
+      "body_params": [],
+      "method_name": "get_token",
+      "method_docs": "Claim a username and get a token"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "game/status",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "server_status",
+      "method_docs": "Use to determine whether the server is alive"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "game/leaderboard/net-worth",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "top_player_net_worth",
+      "method_docs": "Use to see the current net worth of the top players"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "my/account/",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_account_information",
+      "method_docs": "Get information on your account"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "my/flight-plans/{flight_plan_id}",
+      "url_params": ["flight_plan_id"],
+      "body_params": [],
+      "method_name": "get_existing_flight_plan",
+      "method_docs": "Get info on an existing flight plan"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/flight-plans",
+      "url_params": [],
+      "body_params": ["ship_id", "destination"],
+      "method_name": "submit_new_flight_plan",
+      "method_docs": "Submit a new flight plan"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "my/loans",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_your_loans",
+      "method_docs": "Get your loans"
+    },
+    {
+      "http_method": "PUT",
+      "endpoint": "my/loans/{loan_id}",
+      "url_params": ["loan_id"],
+      "body_params": [],
+      "method_name": "pay_off_your_loan",
+      "method_docs": "Pay off your loan"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/loans",
+      "url_params": [],
+      "body_params": ["type"],
+      "method_name": "take_out_a_loan",
+      "method_docs": "Take out a loan"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/purchase-orders",
+      "url_params": [],
+      "body_params": ["ship_id", "good", "quantity"],
+      "method_name": "place_a_new_purchase",
+      "method_docs": "Place a new purchase order"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/sell-orders",
+      "url_params": [],
+      "body_params": ["ship_id", "good", "quantity"],
+      "method_name": "place_a_new_sell",
+      "method_docs": "Place a new sell order"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/ships",
+      "url_params": [],
+      "body_params": ["location", "type"],
+      "method_name": "buy_a_new_ship",
+      "method_docs": "Buy a new ship"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "my/ships/{ship_id}",
+      "url_params": ["ship_id"],
+      "body_params": [],
+      "method_name": "get_your_ship_info",
+      "method_docs": "Get your ship info"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "my/ships",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_your_ship",
+      "method_docs": "Get your ship"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/ships/{ship_id}/jettison",
+      "url_params": ["ship_id"],
+      "body_params": ["good", "quantity"],
+      "method_name": "jettison_cargo",
+      "method_docs": "Jettison cargo"
+    },
+    {
+      "http_method": "DELETE",
+      "endpoint": "my/ships/{ship_id}",
+      "url_params": ["ship_id"],
+      "body_params": [],
+      "method_name": "scrap_your_ship",
+      "method_docs": "Scrap your ship for credits"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/ships/{from_ship_id}/transfer",
+      "url_params": ["from_ship_id"],
+      "body_params": ["to_ship_id", "good", "quantity"],
+      "method_name": "transfer_cargo_between_ships",
+      "method_docs": "Transfer cargo between ships"
+    },
+    {
+      "http_method": "POST",
+      "endpoint": "my/warp-jumps",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "attempt_a_wrap_jump",
+      "method_docs": "Attempt a warp jump"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "locations/{location_symbol}",
+      "url_params": ["location_symbol"],
+      "body_params": [],
+      "method_name": "get_info_location",
+      "method_docs": "Get info on a location"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "locations/{location_symbol}/marketplace",
+      "url_params": ["location_symbol"],
+      "body_params": [],
+      "method_name": "get_info_location_marketplace",
+      "method_docs": "Get info on a location's marketplace"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "locations/{location_symbol}/ship",
+      "url_params": ["location_symbol"],
+      "body_params": [],
+      "method_name": "get_location_ship",
+      "method_docs": "Get the ships at a location"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "systems/{system_symbol}/ship-listings",
+      "url_params": ["system_symbol"],
+      "body_params": [],
+      "method_name": "get_avaiable_ship",
+      "method_docs": "Get a list of all available ships in the system"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "systems/{system_symbol}/flight-plans",
+      "url_params": ["system_symbol"],
+      "body_params": [],
+      "method_name": "get_active_flight",
+      "method_docs": "Get all active flight plans in the system"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "systems/{system_symbol}/ships",
+      "url_params": ["system_symbol"],
+      "body_params": [],
+      "method_name": "get_info_docked_ships",
+      "method_docs": "Get info on a system's docked ships"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "systems/{system_symbol}/ships",
+      "url_params": ["system_symbol"],
+      "body_params": [],
+      "method_name": "get_location_info",
+      "method_docs": "Get location info for a system"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "systems/{system_symbol}",
+      "url_params": ["system_symbol"],
+      "body_params": [],
+      "method_name": "get_system_info",
+      "method_docs": "Get systems info"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "types/goods",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_avaiable_goods",
+      "method_docs": "Get available goods"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "types/loans",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_avaiable_loans",
+      "method_docs": "Get available loans"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "types/ships",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_avaiable_ships",
+      "method_docs": "Get info on available ships"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "game/status",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "get_game_status",
+      "method_docs": "Get game status"
+    },
+    {
+      "http_method": "GET",
+      "endpoint": "my/account",
+      "url_params": [],
+      "body_params": [],
+      "method_name": "my_account",
+      "method_docs": "My account"
+    }
+  ]
+}
