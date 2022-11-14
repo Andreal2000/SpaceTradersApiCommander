@@ -1,7 +1,6 @@
 import json
 import requests
 
-
 def generate_class(file):
     with open(file) as f:
         data = json.load(f)
@@ -31,7 +30,11 @@ def generate_func(data):
     func.__doc__ = data["method_docs"]
     return func
 
+import sys
+sys.path.append('.')
+from utils.token import token
 
-myclass = generate_class("src\\api\endpointsV1.json")
-m = myclass("token")
-print(m.getAccountInfo())
+myclass = generate_class("src/api/endpoints_v1.json")
+m = myclass(token)
+print(token)
+print(m.get_account_information())

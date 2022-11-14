@@ -10,7 +10,6 @@ test = {
     "method_docs": "Get information on your account",
 }
 
-
 def generate_func(data):
     http_method, endpoint = list(data.values())[:2]
     method = {"GET": requests.get,
