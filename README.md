@@ -1,4 +1,4 @@
-# SpaceTradersApiCommander
+# SpaceTradersApiConqueror
 
 ## Contents
 
