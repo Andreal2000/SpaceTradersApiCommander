@@ -3,11 +3,24 @@ import requests
 
 
 def generate_class(file):
+    def init(self, token): self.token = token
+
+    @classmethod
+    def from_username(cls, username):
+        tmp = cls("")
+        data = tmp.claim_username(username)
+        del tmp
+        if dict(data).get("error") == None:
+            with open(f"utils/tokens/{username}.json", "x") as file:
+                file.write(json.dumps(data))
+        else:
+            raise ValueError(data["error"]["message"])
+        return cls(data["token"])
+
     with open(file) as f:
         data = json.load(f)
         endpoints = {e["method_name"]: generate_func(e) for e in data["endpoints"]}
-        def init(self, token): self.token = token
-        class_dict = dict({"__init__": init, "url": data["domain"], "token": ""}, **endpoints)
+        class_dict = dict({"__init__": init, "from_username": from_username, "url": data["domain"], "token": ""}, **endpoints)
         return type("client", (), class_dict)
 
 
@@ -31,7 +44,9 @@ def generate_func(data):
     func.__doc__ = data["method_docs"]
     return func
 
-
-myclass = generate_class("src\\api\endpointsV1.json")
-m = myclass("token")
-print(m.getAccountInfo())
+myclass = generate_class("src\\api\endpoints_V1.json")
+m = myclass("TOKEN")
+# m = myclass.from_username("example")
+# token = json.loads(open("utils/examplre.json").read())["token"]
+# m = myclass(token)
+print(m.get_account_info())
