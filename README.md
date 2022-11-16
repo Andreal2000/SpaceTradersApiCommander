@@ -57,6 +57,16 @@
 ### Our Useful Link
 
 #### Algorithms
+* [Shortest path problem](https://en.wikipedia.org/wiki/Shortest_path_problem) 
+
+  * [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+
+* [Travelling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
+
+  * [Christofides–Serdyukov algorithm - approximate TSP](https://en.wikipedia.org/wiki/Christofides_algorithm)
+
+  * [Traveling purchaser problem](https://en.wikipedia.org/wiki/Traveling_purchaser_problem)
 
 * [A Genetic Algorithm for Ship Routing and Scheduling Problem with Time Window](https://www.researchgate.net/publication/276524887_A_Genetic_Algorithm_for_Ship_Routing_and_Scheduling_Problem_with_Time_Window)
+
 * [Metaheuristic algorithm for ship routing and scheduling problems with time window](https://www.tandfonline.com/doi/full/10.1080/23311975.2019.1616351?scroll=top&needAccess=true)
