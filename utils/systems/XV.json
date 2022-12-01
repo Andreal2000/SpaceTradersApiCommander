@@ -1,0 +1,144 @@
+{
+    "locations": [
+        {
+            "symbol": "XV-BN",
+            "type": "NEBULA",
+            "name": "Bear Nebula",
+            "x": -20,
+            "y": 119,
+            "allowsConstruction": false,
+            "traits": [
+                "ABUNDANT_HELIUM_3"
+            ]
+        },
+        {
+            "symbol": "XV-ST",
+            "type": "PLANET",
+            "name": "Straxabos",
+            "x": 19,
+            "y": -14,
+            "allowsConstruction": false,
+            "traits": [
+                "METAL_ORES",
+                "NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "XV-ST-BG",
+            "type": "MOON",
+            "name": "Bragi",
+            "x": 20,
+            "y": -15,
+            "allowsConstruction": false,
+            "traits": [
+                "METAL_ORES",
+                "NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "XV-XA",
+            "type": "PLANET",
+            "name": "Xamarin",
+            "x": 12,
+            "y": -4,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "XV-OS",
+            "type": "PLANET",
+            "name": "Osuhines",
+            "x": 52,
+            "y": 3,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "XV-SN",
+            "type": "PLANET",
+            "name": "Sinope",
+            "x": -38,
+            "y": 12,
+            "allowsConstruction": false,
+            "traits": [
+                "METAL_ORES",
+                "SOME_ARABLE_LAND"
+            ]
+        },
+        {
+            "symbol": "XV-CB",
+            "type": "PLANET",
+            "name": "Ciubus",
+            "x": 80,
+            "y": -8,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_METAL_ORES",
+                "SOME_ARABLE_LAND",
+                "SOME_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "XV-CB-NM",
+            "type": "MOON",
+            "name": "Nami",
+            "x": 79,
+            "y": -6,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_METAL_ORES",
+                "SOME_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "XV-CB-IT",
+            "type": "MOON",
+            "name": "Ito",
+            "x": 83,
+            "y": -7,
+            "allowsConstruction": false,
+            "traits": [
+                "ABUNDANT_METAL_ORES",
+                "NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "XV-W-OE",
+            "type": "WORMHOLE",
+            "name": "Wormhole",
+            "x": -20,
+            "y": -99,
+            "allowsConstruction": false,
+            "traits": [],
+            "messages": [
+                "Extensive research has revealed a partially functioning warp gate harnessing the power of an unstable but traversable wormhole.",
+                "The scientific community has determined a means of stabilizing the ancient structure.",
+                "Enter at your own risk.",
+                "GET https://api.spacetraders.io/locations/XV-W-OE/structures",
+                "POST https://api.spacetraders.io/structures/:structureId/deposit shipId=:shipId good=:goodSymbol quantity=:quantity",
+                "POST https://api.spacetraders.io/my/warp-jumps shipId=:shipId"
+            ]
+        },
+        {
+            "symbol": "XV-W-ZY1",
+            "type": "WORMHOLE",
+            "name": "Wormhole",
+            "x": 75,
+            "y": -94,
+            "allowsConstruction": false,
+            "traits": [],
+            "messages": [
+                "Extensive research has revealed a partially functioning warp gate harnessing the power of an unstable but traversable wormhole.",
+                "The scientific community has determined a means of stabilizing the ancient structure.",
+                "Enter at your own risk.",
+                "GET https://api.spacetraders.io/locations/XV-W-ZY1/structures",
+                "POST https://api.spacetraders.io/structures/:structureId/deposit shipId=:shipId good=:goodSymbol quantity=:quantity",
+                "POST https://api.spacetraders.io/my/warp-jumps shipId=:shipId"
+            ]
+        }
+    ]
+}

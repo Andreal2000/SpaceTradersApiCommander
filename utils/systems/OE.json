@@ -1,0 +1,132 @@
+{
+    "locations": [
+        {
+            "symbol": "OE-PM",
+            "type": "PLANET",
+            "name": "Prime",
+            "x": -19,
+            "y": 3,
+            "allowsConstruction": false,
+            "traits": [
+                "METAL_ORES",
+                "SOME_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "OE-PM-TR",
+            "type": "MOON",
+            "name": "Tritus",
+            "x": -20,
+            "y": 5,
+            "allowsConstruction": false,
+            "traits": [
+                "NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "OE-CR",
+            "type": "PLANET",
+            "name": "Carth",
+            "x": 4,
+            "y": -13,
+            "allowsConstruction": false,
+            "traits": [
+                "METAL_ORES",
+                "NATURAL_CHEMICALS",
+                "ABUNDANT_RARE_METAL_ORES",
+                "ABUNDANT_TECHNOLOGICAL_RUINS"
+            ]
+        },
+        {
+            "symbol": "OE-KO",
+            "type": "PLANET",
+            "name": "Koria",
+            "x": -49,
+            "y": 1,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_NATURAL_CHEMICALS",
+                "SOME_RARE_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "OE-UC",
+            "type": "PLANET",
+            "name": "Ucarro",
+            "x": -17,
+            "y": -72,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_METAL_ORES",
+                "ARABLE_LAND"
+            ]
+        },
+        {
+            "symbol": "OE-UC-AD",
+            "type": "MOON",
+            "name": "Ado",
+            "x": -15,
+            "y": -73,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_METAL_ORES",
+                "SOME_RARE_METAL_ORES",
+                "TECHNOLOGICAL_RUINS"
+            ]
+        },
+        {
+            "symbol": "OE-UC-OB",
+            "type": "MOON",
+            "name": "Obo",
+            "x": -17,
+            "y": -74,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_METAL_ORES",
+                "NATURAL_CHEMICALS",
+                "SOME_TECHNOLOGICAL_RUINS"
+            ]
+        },
+        {
+            "symbol": "OE-NY",
+            "type": "ASTEROID",
+            "name": "Nyon",
+            "x": 43,
+            "y": -46,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_NATURAL_CHEMICALS",
+                "RARE_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "OE-BO",
+            "type": "GAS_GIANT",
+            "name": "Bo",
+            "x": -59,
+            "y": 60,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_HELIUM_3",
+                "TECHNOLOGICAL_RUINS"
+            ]
+        },
+        {
+            "symbol": "OE-W-XV",
+            "type": "WORMHOLE",
+            "name": "Wormhole",
+            "x": 5,
+            "y": -101,
+            "allowsConstruction": false,
+            "traits": [],
+            "messages": [
+                "Extensive research has revealed a partially functioning warp gate harnessing the power of an unstable but traversable wormhole.",
+                "The scientific community has determined a means of stabilizing the ancient structure.",
+                "Enter at your own risk.",
+                "GET https://api.spacetraders.io/locations/OE-W-XV/structures",
+                "POST https://api.spacetraders.io/structures/:structureId/deposit shipId=:shipId good=:goodSymbol quantity=:quantity",
+                "POST https://api.spacetraders.io/my/warp-jumps shipId=:shipId"
+            ]
+        }
+    ]
+}

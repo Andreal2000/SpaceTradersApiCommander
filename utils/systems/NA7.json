@@ -1,0 +1,46 @@
+{
+    "locations": [
+        {
+            "symbol": "NA7-GH",
+            "type": "PLANET",
+            "name": "Vuclite",
+            "x": -14,
+            "y": 38,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_ARABLE_LAND",
+                "SOME_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "NA7-TH",
+            "type": "PLANET",
+            "name": "Thegaturn",
+            "x": -64,
+            "y": 9,
+            "allowsConstruction": false,
+            "traits": [
+                "SOME_METAL_ORES",
+                "ARABLE_LAND",
+                "ABUNDANT_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "NA7-W-ZY1",
+            "type": "WORMHOLE",
+            "name": "Wormhole",
+            "x": -13,
+            "y": 116,
+            "allowsConstruction": false,
+            "traits": [],
+            "messages": [
+                "Extensive research has revealed a partially functioning warp gate harnessing the power of an unstable but traversable wormhole.",
+                "The scientific community has determined a means of stabilizing the ancient structure.",
+                "Enter at your own risk.",
+                "GET https://api.spacetraders.io/locations/NA7-W-ZY1/structures",
+                "POST https://api.spacetraders.io/structures/:structureId/deposit shipId=:shipId good=:goodSymbol quantity=:quantity",
+                "POST https://api.spacetraders.io/my/warp-jumps shipId=:shipId"
+            ]
+        }
+    ]
+}

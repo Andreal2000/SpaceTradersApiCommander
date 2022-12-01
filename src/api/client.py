@@ -7,15 +7,18 @@ def generate_class(class_name, file):
 
     @classmethod
     def from_username(cls, username):
-        tmp = cls("")
-        data = tmp.claim_username(username)
-        del tmp
-        if dict(data).get("error") is None:
-            with open(f"utils/tokens/{username}.json", "x") as file:
-                file.write(json.dumps(data, indent=4))
-        else:
-            raise ValueError(data["error"]["message"])
-        return cls(data["token"])
+        try:
+            return cls.from_file(f"utils/tokens/{username}.json")
+        except:
+            tmp = cls("")
+            data = tmp.claim_username(username)
+            del tmp
+            if dict(data).get("error") is None:
+                with open(f"utils/tokens/{username}.json", "w") as file:
+                    file.write(json.dumps(data, indent=4))
+            else:
+                raise ValueError(data["error"]["message"])
+            return cls(data["token"])
 
     @classmethod
     def from_file(cls, file):

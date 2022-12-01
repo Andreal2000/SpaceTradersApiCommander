@@ -1,0 +1,200 @@
+{
+    "locations": [
+        {
+            "symbol": "ZY1-GG",
+            "type": "PLANET",
+            "name": "Grugutania",
+            "x": -13,
+            "y": -1,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_METAL_ORES",
+                "SOME_ARABLE_LAND",
+                "SOME_NATURAL_CHEMICALS",
+                "ABUNDANT_RARE_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "ZY1-GG-CY",
+            "type": "MOON",
+            "name": "Cayama",
+            "x": -11,
+            "y": 1,
+            "allowsConstruction": true,
+            "traits": [
+                "ABUNDANT_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "ZY1-GG-LAO",
+            "type": "MOON",
+            "name": "LAO",
+            "x": -13,
+            "y": -3,
+            "allowsConstruction": true,
+            "traits": [
+                "METAL_ORES",
+                "SOME_RARE_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "ZY1-GH",
+            "type": "PLANET",
+            "name": "Gehiri",
+            "x": -24,
+            "y": 3,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_ARABLE_LAND",
+                "SOME_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "ZY1-GH-MD",
+            "type": "MOON",
+            "name": "Madalia",
+            "x": -23,
+            "y": 2,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_METAL_ORES",
+                "SOME_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "ZY1-GH-NT",
+            "type": "MOON",
+            "name": "Nauter",
+            "x": -25,
+            "y": 1,
+            "allowsConstruction": true,
+            "traits": [
+                "NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "ZY1-GH-HD",
+            "type": "MOON",
+            "name": "Hudichi",
+            "x": -20,
+            "y": 3,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_METAL_ORES",
+                "SOME_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "ZY1-VZ",
+            "type": "GAS_GIANT",
+            "name": "Veazuno",
+            "x": -1,
+            "y": -43,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_HELIUM_3"
+            ]
+        },
+        {
+            "symbol": "ZY1-M57Z",
+            "type": "GAS_GIANT",
+            "name": "Milles 57Z",
+            "x": 48,
+            "y": -56,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_HELIUM_3"
+            ]
+        },
+        {
+            "symbol": "ZY1-T85",
+            "type": "ASTEROID",
+            "name": "Thiea 85M",
+            "x": -39,
+            "y": 51,
+            "allowsConstruction": true,
+            "traits": [
+                "ABUNDANT_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "ZY1-C3T",
+            "type": "ASTEROID",
+            "name": "Crade 3TLL",
+            "x": -22,
+            "y": 85,
+            "allowsConstruction": true,
+            "traits": [
+                "SOME_METAL_ORES",
+                "SOME_NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "ZY1-ECC",
+            "type": "ASTEROID",
+            "name": "Eccao",
+            "x": 79,
+            "y": -28,
+            "allowsConstruction": true,
+            "traits": [
+                "NATURAL_CHEMICALS",
+                "ABUNDANT_RARE_METAL_ORES"
+            ]
+        },
+        {
+            "symbol": "ZY1-LS",
+            "type": "ASTEROID",
+            "name": "Losipra",
+            "x": -81,
+            "y": -9,
+            "allowsConstruction": true,
+            "traits": [
+                "METAL_ORES",
+                "NATURAL_CHEMICALS"
+            ]
+        },
+        {
+            "symbol": "ZY1-VC",
+            "type": "ASTEROID",
+            "name": "Vicarro",
+            "x": 75,
+            "y": 28,
+            "allowsConstruction": true,
+            "traits": []
+        },
+        {
+            "symbol": "ZY1-W-XV",
+            "type": "WORMHOLE",
+            "name": "Wormhole",
+            "x": 64,
+            "y": -83,
+            "allowsConstruction": false,
+            "traits": [],
+            "messages": [
+                "Extensive research has revealed a partially functioning warp gate harnessing the power of an unstable but traversable wormhole.",
+                "The scientific community has determined a means of stabilizing the ancient structure.",
+                "Enter at your own risk.",
+                "GET https://api.spacetraders.io/locations/ZY1-W-XV/structures",
+                "POST https://api.spacetraders.io/structures/:structureId/deposit shipId=:shipId good=:goodSymbol quantity=:quantity",
+                "POST https://api.spacetraders.io/my/warp-jumps shipId=:shipId"
+            ]
+        },
+        {
+            "symbol": "ZY1-W-NA7",
+            "type": "WORMHOLE",
+            "name": "Wormhole",
+            "x": -65,
+            "y": 67,
+            "allowsConstruction": false,
+            "traits": [],
+            "messages": [
+                "Extensive research has revealed a partially functioning warp gate harnessing the power of an unstable but traversable wormhole.",
+                "The scientific community has determined a means of stabilizing the ancient structure.",
+                "Enter at your own risk.",
+                "GET https://api.spacetraders.io/locations/ZY1-W-NA7/structures",
+                "POST https://api.spacetraders.io/structures/:structureId/deposit shipId=:shipId good=:goodSymbol quantity=:quantity",
+                "POST https://api.spacetraders.io/my/warp-jumps shipId=:shipId"
+            ]
+        }
+    ]
+}
