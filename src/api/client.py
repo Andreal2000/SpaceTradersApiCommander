@@ -51,7 +51,7 @@ def generate_func(data):
     func.__doc__ = data["method_docs"]
     return func
     
-CLASS_NAME = "api"
+CLASS_NAME = "Api"
 URL = "src\\api\endpoints_V1.json"
 
-api = generate_class(CLASS_NAME, URL)
+Api = generate_class(CLASS_NAME, URL)

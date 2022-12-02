@@ -9,20 +9,18 @@
 # 
 
 import json
+import math
 from api import client
-
-# api = client("TOKEN")
-# api = client.from_username("example")
-# token = json.loads(open("utils/example.json").read())["token"]
-# api = client(token)
 
 SYSTEMS = ("OE", "XV", "ZY1", "NA7")
 
+TOKEN = "TOKEN"
 USERNAME = "example"
 FILE = f"utils/tokens/{USERNAME}.json"
 
-# api = client.api.from_file(FILE)
-api = client.api.from_username(USERNAME)
+# api = client.Api(TOKEN)
+# api = client.Api.from_file(FILE)
+api = client.Api.from_username(USERNAME)
 
 
 def download_types(types):
@@ -79,7 +77,26 @@ def get_systems(*systems):
             result[s] = download_systems(s)[s]
     return result
 
-def get_systems_coordinates(*systems):
+
+def calculate_distance(x1, y1, x2, y2):
+    return round(math.sqrt((x2-x1)**2 + (y2-y1)**2))
+
+
+def calculate_time(distance, speed):
+    SYSTEM_SCALE = 3
+    DOCKING_SECONDS = 30
+    return ((distance * SYSTEM_SCALE) / speed) + DOCKING_SECONDS
+
+
+def calculate_fuel_cost(distance, fuel_efficiency, docking_efficiency, origin_location_type):
+    flight_cost = math.round((distance * fuel_efficiency) / 30)
+    docking_cost = (docking_efficiency if origin_location_type == "PLANET" else 0) + 1
+    return flight_cost + docking_cost
+
+
+def get_systems_matrix(*systems):
     if len(systems) == 0:
         systems = SYSTEMS
-    return {s : tuple([(i["symbol"],(i["x"],i["y"])) for i in l]) for s , l in get_systems(*systems).items()}
+    return {s : [ [ h["symbol"] for h in l ] , [ [ calculate_distance(a["x"],a["y"],b["x"],b["y"]) for b in l ] for a in l ] ] for s , l in get_systems(*systems).items()}
+
+    # {SYSTEM: [MATRIX HEADER, MATRIX], ...}
