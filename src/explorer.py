@@ -75,30 +75,27 @@ def travelling_salesman_problem(*systems):
             file.write(json.dumps({k: inner(v) if len(v[1]) <= 11 else inner_apx(v)}, indent=4))
 
 
-def get_fastest_ship(ships): 
-    return ships['ships'][0]
-
-
 def get_system_TSP(system):
     if len(system) == 0 or system == None:
         raise Exception
     return json.loads(open(f"utils/systems/tsp/TSP_{system}.json").read())[system]
+
 
 def tmp():
     # Get fastest ship
     ships = api.get_ships()
     if len(ships['ships']) == 0: 
         raise Exception
-    elif len(ships['ships']) == 1: 
+    elif len(ships['ships']) == 1:
         ship = ships['ships'][0]
     else:
-        ship = get_fastest_ship(ships['ships'])
-    print(ship)
+        ship = sorted(ships['ships'], key=lambda s: s["speed"], reverse=True)[0]
+    # print(ship)
 
     # Get symbols of the current marketplace
     marketplace = api.get_marketplace(ship['location'])['marketplace']
     symbols = [m['symbol'] for m in marketplace]
-    print(symbols)
+    # print(symbols)
 
     # Sell or jettison all excepts FUEL
     for good in ship['cargo']:
@@ -109,10 +106,10 @@ def tmp():
                 api.jettison_cargo(ship['id'], good['good'], good['quantity'])
 
     # Buy FUEL (spaceAvailable is max_cargo - `current FUEL`)
-    spaceAvailable = ship['spaceAvailable']
-    while spaceAvailable != 0:
-        api.new_purchase(ship['id'], 'FUEL', min(spaceAvailable, ship['loadingSpeed']))
-        spaceAvailable -= min(spaceAvailable, ship['loadingSpeed'])
+    ship = api.get_ship_info(ship["id"])["ship"]
+    while ship['spaceAvailable'] != 0:
+        res = api.new_purchase(ship['id'], 'FUEL', min(ship['spaceAvailable'], ship['loadingSpeed']))
+        ship = res["ship"]
 
     # system_TSP = get_system_TSP(ship['location'].split('-')[0])
     # print(system_TSP)

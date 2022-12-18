@@ -35,8 +35,8 @@
     },
     {
       "http_method": "GET",
-      "endpoint": "my/flight-plans/{flight_plan_id}",
-      "url_params": ["flight_plan_id"],
+      "endpoint": "my/flight-plans/{flightPlanId}",
+      "url_params": ["flightPlanId"],
       "body_params": [],
       "method_name": "get_flight_plan",
       "method_docs": "Get info on an existing flight plan"
@@ -45,7 +45,7 @@
       "http_method": "POST",
       "endpoint": "my/flight-plans",
       "url_params": [],
-      "body_params": ["ship_id", "destination"],
+      "body_params": ["shipId", "destination"],
       "method_name": "new_flight_plan",
       "method_docs": "Submit a new flight plan"
     },
@@ -59,8 +59,8 @@
     },
     {
       "http_method": "PUT",
-      "endpoint": "my/loans/{loan_id}",
-      "url_params": ["loan_id"],
+      "endpoint": "my/loans/{loanId}",
+      "url_params": ["loanId"],
       "body_params": [],
       "method_name": "pay_off_your_loan",
       "method_docs": "Pay off your loan"
@@ -99,8 +99,8 @@
     },
     {
       "http_method": "GET",
-      "endpoint": "my/ships/{ship_id}",
-      "url_params": ["ship_id"],
+      "endpoint": "my/ships/{shipId}",
+      "url_params": ["shipId"],
       "body_params": [],
       "method_name": "get_ship_info",
       "method_docs": "Get your ship info"
@@ -123,17 +123,17 @@
     },
     {
       "http_method": "DELETE",
-      "endpoint": "my/ships/{ship_id}",
-      "url_params": ["ship_id"],
+      "endpoint": "my/ships/{shipId}",
+      "url_params": ["shipId"],
       "body_params": [],
       "method_name": "scrap_ship",
       "method_docs": "Scrap your ship for credits"
     },
     {
       "http_method": "POST",
-      "endpoint": "my/ships/{from_ship_id}/transfer",
-      "url_params": ["from_ship_id"],
-      "body_params": ["to_ship_id", "good", "quantity"],
+      "endpoint": "my/ships/{fromShipId}/transfer",
+      "url_params": ["fromShipId"],
+      "body_params": ["toShipId", "good", "quantity"],
       "method_name": "transfer_cargo",
       "method_docs": "Transfer cargo between ships"
     },
@@ -147,64 +147,64 @@
     },
     {
       "http_method": "GET",
-      "endpoint": "locations/{location_symbol}",
-      "url_params": ["location_symbol"],
+      "endpoint": "locations/{locationSymbol}",
+      "url_params": ["locationSymbol"],
       "body_params": [],
       "method_name": "get_location_info",
       "method_docs": "Get info on a location"
     },
     {
       "http_method": "GET",
-      "endpoint": "locations/{location_symbol}/marketplace",
-      "url_params": ["location_symbol"],
+      "endpoint": "locations/{locationSymbol}/marketplace",
+      "url_params": ["locationSymbol"],
       "body_params": [],
       "method_name": "get_marketplace",
       "method_docs": "Get info on a location's marketplace"
     },
     {
       "http_method": "GET",
-      "endpoint": "locations/{location_symbol}/ship",
-      "url_params": ["location_symbol"],
+      "endpoint": "locations/{locationSymbol}/ship",
+      "url_params": ["locationSymbol"],
       "body_params": [],
       "method_name": "get_location_ships",
       "method_docs": "Get the ships at a location"
     },
     {
       "http_method": "GET",
-      "endpoint": "systems/{system_symbol}/ship-listings",
-      "url_params": ["system_symbol"],
+      "endpoint": "systems/{systemSymbol}/ship-listings",
+      "url_params": ["systemSymbol"],
       "body_params": [],
       "method_name": "get_avaiable_ships",
       "method_docs": "Get a list of all available ships in the system"
     },
     {
       "http_method": "GET",
-      "endpoint": "systems/{system_symbol}/flight-plans",
-      "url_params": ["system_symbol"],
+      "endpoint": "systems/{systemSymbol}/flight-plans",
+      "url_params": ["systemSymbol"],
       "body_params": [],
       "method_name": "get_active_flight_",
       "method_docs": "Get all active flight plans in the system"
     },
     {
       "http_method": "GET",
-      "endpoint": "systems/{system_symbol}/ships",
-      "url_params": ["system_symbol"],
+      "endpoint": "systems/{systemSymbol}/ships",
+      "url_params": ["systemSymbol"],
       "body_params": [],
       "method_name": "get_docked_ships",
       "method_docs": "Get info on a system's docked ships"
     },
     {
       "http_method": "GET",
-      "endpoint": "systems/{system_symbol}/locations",
-      "url_params": ["system_symbol"],
+      "endpoint": "systems/{systemSymbol}/locations",
+      "url_params": ["systemSymbol"],
       "body_params": [],
       "method_name": "get_system_locations",
       "method_docs": "Get locations info for a system"
     },
     {
       "http_method": "GET",
-      "endpoint": "systems/{system_symbol}",
-      "url_params": ["system_symbol"],
+      "endpoint": "systems/{systemSymbol}",
+      "url_params": ["systemSymbol"],
       "body_params": [],
       "method_name": "get_system_info",
       "method_docs": "Get system info"
