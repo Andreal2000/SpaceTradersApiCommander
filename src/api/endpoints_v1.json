@@ -77,7 +77,7 @@
       "http_method": "POST",
       "endpoint": "my/purchase-orders",
       "url_params": [],
-      "body_params": ["ship_id", "good", "quantity"],
+      "body_params": ["shipId", "good", "quantity"],
       "method_name": "new_purchase",
       "method_docs": "Place a new purchase order"
     },
@@ -85,7 +85,7 @@
       "http_method": "POST",
       "endpoint": "my/sell-orders",
       "url_params": [],
-      "body_params": ["ship_id", "good", "quantity"],
+      "body_params": ["shipId", "good", "quantity"],
       "method_name": "new_sell",
       "method_docs": "Place a new sell order"
     },
@@ -115,8 +115,8 @@
     },
     {
       "http_method": "POST",
-      "endpoint": "my/ships/{ship_id}/jettison",
-      "url_params": ["ship_id"],
+      "endpoint": "my/ships/{shipId}/jettison",
+      "url_params": ["shipId"],
       "body_params": ["good", "quantity"],
       "method_name": "jettison_cargo",
       "method_docs": "Jettison cargo"
