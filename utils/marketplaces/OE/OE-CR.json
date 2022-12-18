@@ -1,0 +1,40 @@
+{
+    "marketplace": [
+        {
+            "symbol": "PROTEIN_SYNTHESIZERS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 355,
+            "spread": 22,
+            "purchasePricePerUnit": 377,
+            "sellPricePerUnit": 333,
+            "quantityAvailable": 13
+        },
+        {
+            "symbol": "FOOD",
+            "volumePerUnit": 1,
+            "pricePerUnit": 5,
+            "spread": 1,
+            "purchasePricePerUnit": 6,
+            "sellPricePerUnit": 4,
+            "quantityAvailable": 66651
+        },
+        {
+            "symbol": "TEXTILES",
+            "volumePerUnit": 1,
+            "pricePerUnit": 10,
+            "spread": 2,
+            "purchasePricePerUnit": 12,
+            "sellPricePerUnit": 8,
+            "quantityAvailable": 58429
+        },
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 19,
+            "spread": 1,
+            "purchasePricePerUnit": 20,
+            "sellPricePerUnit": 18,
+            "quantityAvailable": 41088
+        }
+    ]
+}

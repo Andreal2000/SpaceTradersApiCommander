@@ -1,0 +1,31 @@
+{
+    "marketplace": [
+        {
+            "symbol": "MACHINERY",
+            "volumePerUnit": 2,
+            "pricePerUnit": 538,
+            "spread": 10,
+            "purchasePricePerUnit": 548,
+            "sellPricePerUnit": 528,
+            "quantityAvailable": 342
+        },
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 2,
+            "spread": 1,
+            "purchasePricePerUnit": 3,
+            "sellPricePerUnit": 1,
+            "quantityAvailable": 99510
+        },
+        {
+            "symbol": "EXOTIC_PLASMA",
+            "volumePerUnit": 4,
+            "pricePerUnit": 2959,
+            "spread": 130,
+            "purchasePricePerUnit": 3089,
+            "sellPricePerUnit": 2829,
+            "quantityAvailable": 11
+        }
+    ]
+}

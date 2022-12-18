@@ -1,3 +1,4 @@
+import time
 from downloader import *
 from itertools import permutations
 import math
@@ -80,8 +81,15 @@ def get_system_TSP(system):
         raise Exception
     return json.loads(open(f"utils/systems/tsp/TSP_{system}.json").read())[system]
 
+# TODO REMOVE API FROM DECLARETION WHEN MOVE ALL INTO A CLASS
+def fill_ship(api, ship):
+    ship = api.get_ship_info(ship["id"])["ship"]
+    while ship['spaceAvailable'] != 0:
+        res = api.new_purchase(ship['id'], 'FUEL', min(ship['spaceAvailable'], ship['loadingSpeed']))
+        ship = res["ship"]
+    return ship
 
-def tmp():
+def explore_systems():
     # Get fastest ship
     ships = api.get_ships()
     if len(ships['ships']) == 0: 
@@ -90,12 +98,10 @@ def tmp():
         ship = ships['ships'][0]
     else:
         ship = sorted(ships['ships'], key=lambda s: s["speed"], reverse=True)[0]
-    # print(ship)
 
     # Get symbols of the current marketplace
-    marketplace = api.get_marketplace(ship['location'])['marketplace']
-    symbols = [m['symbol'] for m in marketplace]
-    # print(symbols)
+    symbols = api.get_marketplace(ship['location'])['marketplace']
+    symbols = [m['symbol'] for m in symbols]
 
     # Sell or jettison all excepts FUEL
     for good in ship['cargo']:
@@ -106,20 +112,23 @@ def tmp():
                 api.jettison_cargo(ship['id'], good['good'], good['quantity'])
 
     # Buy FUEL (spaceAvailable is max_cargo - `current FUEL`)
-    ship = api.get_ship_info(ship["id"])["ship"]
-    while ship['spaceAvailable'] != 0:
-        res = api.new_purchase(ship['id'], 'FUEL', min(ship['spaceAvailable'], ship['loadingSpeed']))
-        ship = res["ship"]
+    ship = fill_ship(api, ship)
 
-    # system_TSP = get_system_TSP(ship['location'].split('-')[0])
-    # print(system_TSP)
+    system_TSP = get_system_TSP(ship['location'].split('-')[0])
+    system_TSP = (system_TSP[system_TSP.index(ship["location"])+1:] +
+                  system_TSP[:system_TSP.index(ship["location"])+1])
 
-    # do TSP
-    # for each planet get marketplace
+    for s in system_TSP:
+        fp = api.new_flight_plan(ship["id"], s)["flightPlan"]
+        time.sleep(fp["timeRemainingInSeconds"] + 1)
+        marketplace = api.get_marketplace(s)
+        with open(f"utils/marketplaces/{s.split('-')[0]}/{s}.json", "w") as file:
+            file.write(json.dumps(marketplace, indent=4))
+        ship = fill_ship(api, ship)
 
-tmp()
 
 # TODO
-# leggendo il file di prima fa viaggiare la nave per i pianeti e salva i marketplace info in utils/marketplaces
-#   (combrare ad ogni pianeta la benzina se a 1 o serbatoio quasi vuoto)
 # generare un grafo in base a pianeti e cosa vendono e salvarlo in utils
+# aggiungere controlli sul loan prima di explore_systems
+# migliorare explore_systems per esplorare tutte le galassie
+# scaricare da discord i dati migliorati sulle navi

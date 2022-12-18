@@ -1,0 +1,40 @@
+{
+    "marketplace": [
+        {
+            "symbol": "DRONES",
+            "volumePerUnit": 1,
+            "pricePerUnit": 70,
+            "spread": 2,
+            "purchasePricePerUnit": 72,
+            "sellPricePerUnit": 68,
+            "quantityAvailable": 10
+        },
+        {
+            "symbol": "SHIP_PLATING",
+            "volumePerUnit": 2,
+            "pricePerUnit": 100,
+            "spread": 6,
+            "purchasePricePerUnit": 106,
+            "sellPricePerUnit": 94,
+            "quantityAvailable": 70275
+        },
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 21,
+            "spread": 1,
+            "purchasePricePerUnit": 22,
+            "sellPricePerUnit": 20,
+            "quantityAvailable": 42638
+        },
+        {
+            "symbol": "UNSTABLE_COMPOUNDS",
+            "volumePerUnit": 3,
+            "pricePerUnit": 1920,
+            "spread": 84,
+            "purchasePricePerUnit": 2004,
+            "sellPricePerUnit": 1836,
+            "quantityAvailable": 0
+        }
+    ]
+}

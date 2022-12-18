@@ -1,0 +1,58 @@
+{
+    "marketplace": [
+        {
+            "symbol": "METALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 29,
+            "spread": 1,
+            "purchasePricePerUnit": 30,
+            "sellPricePerUnit": 28,
+            "quantityAvailable": 23992
+        },
+        {
+            "symbol": "TEXTILES",
+            "volumePerUnit": 1,
+            "pricePerUnit": 70,
+            "spread": 2,
+            "purchasePricePerUnit": 72,
+            "sellPricePerUnit": 68,
+            "quantityAvailable": 10
+        },
+        {
+            "symbol": "DRONES",
+            "volumePerUnit": 1,
+            "pricePerUnit": 20,
+            "spread": 2,
+            "purchasePricePerUnit": 22,
+            "sellPricePerUnit": 18,
+            "quantityAvailable": 65210
+        },
+        {
+            "symbol": "CONSUMER_GOODS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 105,
+            "spread": 4,
+            "purchasePricePerUnit": 109,
+            "sellPricePerUnit": 101,
+            "quantityAvailable": 14
+        },
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 17,
+            "spread": 2,
+            "purchasePricePerUnit": 19,
+            "sellPricePerUnit": 15,
+            "quantityAvailable": 47059
+        },
+        {
+            "symbol": "BIOMETRIC_FIREARMS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 80,
+            "spread": 12,
+            "purchasePricePerUnit": 92,
+            "sellPricePerUnit": 68,
+            "quantityAvailable": 22211
+        }
+    ]
+}

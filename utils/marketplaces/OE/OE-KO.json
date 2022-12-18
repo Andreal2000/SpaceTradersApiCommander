@@ -1,0 +1,67 @@
+{
+    "marketplace": [
+        {
+            "symbol": "CONSUMER_GOODS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 15,
+            "spread": 4,
+            "purchasePricePerUnit": 19,
+            "sellPricePerUnit": 11,
+            "quantityAvailable": 43307
+        },
+        {
+            "symbol": "CONSTRUCTION_MATERIALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 30,
+            "spread": 3,
+            "purchasePricePerUnit": 33,
+            "sellPricePerUnit": 27,
+            "quantityAvailable": 70610
+        },
+        {
+            "symbol": "CHEMICALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 44,
+            "spread": 1,
+            "purchasePricePerUnit": 45,
+            "sellPricePerUnit": 43,
+            "quantityAvailable": 0
+        },
+        {
+            "symbol": "METALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 42,
+            "spread": 1,
+            "purchasePricePerUnit": 43,
+            "sellPricePerUnit": 41,
+            "quantityAvailable": 9
+        },
+        {
+            "symbol": "EXPLOSIVES",
+            "volumePerUnit": 1,
+            "pricePerUnit": 12,
+            "spread": 2,
+            "purchasePricePerUnit": 14,
+            "sellPricePerUnit": 10,
+            "quantityAvailable": 77151
+        },
+        {
+            "symbol": "FOOD",
+            "volumePerUnit": 1,
+            "pricePerUnit": 35,
+            "spread": 1,
+            "purchasePricePerUnit": 36,
+            "sellPricePerUnit": 34,
+            "quantityAvailable": 0
+        },
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 13,
+            "spread": 1,
+            "purchasePricePerUnit": 14,
+            "sellPricePerUnit": 12,
+            "quantityAvailable": 66135
+        }
+    ]
+}

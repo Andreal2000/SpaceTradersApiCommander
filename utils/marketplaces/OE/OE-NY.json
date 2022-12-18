@@ -1,0 +1,58 @@
+{
+    "marketplace": [
+        {
+            "symbol": "RARE_METALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 40,
+            "spread": 5,
+            "purchasePricePerUnit": 45,
+            "sellPricePerUnit": 35,
+            "quantityAvailable": 50551
+        },
+        {
+            "symbol": "NARCOTICS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 115,
+            "spread": 5,
+            "purchasePricePerUnit": 120,
+            "sellPricePerUnit": 110,
+            "quantityAvailable": 12
+        },
+        {
+            "symbol": "EXPLOSIVES",
+            "volumePerUnit": 1,
+            "pricePerUnit": 92,
+            "spread": 2,
+            "purchasePricePerUnit": 94,
+            "sellPricePerUnit": 90,
+            "quantityAvailable": 9
+        },
+        {
+            "symbol": "METALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 2,
+            "spread": 1,
+            "purchasePricePerUnit": 3,
+            "sellPricePerUnit": 1,
+            "quantityAvailable": 93591
+        },
+        {
+            "symbol": "FOOD",
+            "volumePerUnit": 1,
+            "pricePerUnit": 35,
+            "spread": 1,
+            "purchasePricePerUnit": 36,
+            "sellPricePerUnit": 34,
+            "quantityAvailable": 9
+        },
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 13,
+            "spread": 1,
+            "purchasePricePerUnit": 14,
+            "sellPricePerUnit": 12,
+            "quantityAvailable": 65097
+        }
+    ]
+}

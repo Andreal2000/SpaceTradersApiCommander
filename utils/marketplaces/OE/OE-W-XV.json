@@ -1,0 +1,13 @@
+{
+    "marketplace": [
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 23,
+            "spread": 1,
+            "purchasePricePerUnit": 24,
+            "sellPricePerUnit": 22,
+            "quantityAvailable": 38901
+        }
+    ]
+}

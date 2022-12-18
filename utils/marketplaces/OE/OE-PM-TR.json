@@ -1,0 +1,40 @@
+{
+    "marketplace": [
+        {
+            "symbol": "METALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 15,
+            "spread": 1,
+            "purchasePricePerUnit": 16,
+            "sellPricePerUnit": 14,
+            "quantityAvailable": 62950
+        },
+        {
+            "symbol": "CONSTRUCTION_MATERIALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 140,
+            "spread": 4,
+            "purchasePricePerUnit": 144,
+            "sellPricePerUnit": 136,
+            "quantityAvailable": 11
+        },
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 2,
+            "spread": 1,
+            "purchasePricePerUnit": 3,
+            "sellPricePerUnit": 1,
+            "quantityAvailable": 87028
+        },
+        {
+            "symbol": "FUSION_REACTORS",
+            "volumePerUnit": 6,
+            "pricePerUnit": 20400,
+            "spread": 196,
+            "purchasePricePerUnit": 20596,
+            "sellPricePerUnit": 20204,
+            "quantityAvailable": 0
+        }
+    ]
+}

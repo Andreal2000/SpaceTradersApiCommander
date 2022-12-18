@@ -1,0 +1,40 @@
+{
+    "marketplace": [
+        {
+            "symbol": "CHEMICALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 4,
+            "spread": 1,
+            "purchasePricePerUnit": 5,
+            "sellPricePerUnit": 3,
+            "quantityAvailable": 96232
+        },
+        {
+            "symbol": "DRONES",
+            "volumePerUnit": 1,
+            "pricePerUnit": 70,
+            "spread": 2,
+            "purchasePricePerUnit": 72,
+            "sellPricePerUnit": 68,
+            "quantityAvailable": 10
+        },
+        {
+            "symbol": "RARE_METALS",
+            "volumePerUnit": 1,
+            "pricePerUnit": 160,
+            "spread": 6,
+            "purchasePricePerUnit": 166,
+            "sellPricePerUnit": 154,
+            "quantityAvailable": 13
+        },
+        {
+            "symbol": "FUEL",
+            "volumePerUnit": 1,
+            "pricePerUnit": 25,
+            "spread": 1,
+            "purchasePricePerUnit": 26,
+            "sellPricePerUnit": 24,
+            "quantityAvailable": 34725
+        }
+    ]
+}
