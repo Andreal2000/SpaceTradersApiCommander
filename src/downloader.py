@@ -65,3 +65,16 @@ def get_systems(*systems):
         except:
             result[s] = download_systems(s)[s]
     return result
+
+
+# TODO: add try/catch if not found (do TSP)
+def get_marketpalces(*systems):
+	if len(systems) == 0:
+		systems = SYSTEMS
+	result = {}
+	for s in systems:
+		result[s] = {}
+		for l in get_systems(s)[s]:
+			result[s][l["symbol"]] = json.loads(open(f"utils/marketplaces/{s}/{l['symbol']}.json").read())["marketplace"]
+	return result
+    

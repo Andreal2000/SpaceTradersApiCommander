@@ -126,9 +126,42 @@ def explore_systems():
             file.write(json.dumps(marketplace, indent=4))
         ship = fill_ship(api, ship)
 
+def get_materials_seller(system, symbol):
+    marketpalces = get_marketpalces(system)[system]
+    res = []
 
-# TODO
-# generare un grafo in base a pianeti e cosa vendono e salvarlo in utils
-# aggiungere controlli sul loan prima di explore_systems
-# migliorare explore_systems per esplorare tutte le galassie
-# scaricare da discord i dati migliorati sulle navi
+    for location, materials in marketpalces.items():
+        for material in materials:
+            if material["symbol"] == symbol:
+                res.append(location)
+    
+    return res
+
+def generate_graphs(*systems):
+	# For each system
+    # { A : 
+    #       {
+    #        <type> : [B, C, D] ,
+	#		 <...> : [...] ,
+    #       }
+	# },
+	# { B :
+	#		...
+	# },
+
+    if len(systems) == 0:
+        systems = SYSTEMS
+
+    system_location_materials = {}
+    marketpalces = get_marketpalces(*systems)
+
+    for system, locations in marketpalces.items():
+        system_location_materials[system] = {}
+        for location, materials in locations.items():
+            system_location_materials[system][location] = {} 
+            for material in materials:
+                system_location_materials[system][location][material["symbol"]] = get_materials_seller(system, material["symbol"])
+
+    for s in systems:
+        with open(f"utils/graphs/{s}.json", "w") as file:
+            file.write(json.dumps(system_location_materials[s], indent=4))

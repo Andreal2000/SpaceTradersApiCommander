@@ -1,0 +1,5 @@
+# TODO
+
+# aggiungere controlli sul loan prima di explore_systems
+# migliorare explore_systems per esplorare tutte le galassie
+# scaricare da discord i dati migliorati sulle navi
