@@ -1,0 +1,282 @@
+{
+    "OE-PM": {
+        "METALS": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-KO",
+            "OE-NY"
+        ],
+        "TEXTILES": [
+            "OE-PM",
+            "OE-CR"
+        ],
+        "DRONES": [
+            "OE-PM",
+            "OE-UC-AD",
+            "OE-UC-OB"
+        ],
+        "CONSUMER_GOODS": [
+            "OE-PM",
+            "OE-KO"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ],
+        "BIOMETRIC_FIREARMS": [
+            "OE-PM"
+        ]
+    },
+    "OE-PM-TR": {
+        "METALS": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-KO",
+            "OE-NY"
+        ],
+        "CONSTRUCTION_MATERIALS": [
+            "OE-PM-TR",
+            "OE-KO"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ],
+        "FUSION_REACTORS": [
+            "OE-PM-TR"
+        ]
+    },
+    "OE-CR": {
+        "PROTEIN_SYNTHESIZERS": [
+            "OE-CR"
+        ],
+        "FOOD": [
+            "OE-CR",
+            "OE-KO",
+            "OE-NY"
+        ],
+        "TEXTILES": [
+            "OE-PM",
+            "OE-CR"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ]
+    },
+    "OE-KO": {
+        "CONSUMER_GOODS": [
+            "OE-PM",
+            "OE-KO"
+        ],
+        "CONSTRUCTION_MATERIALS": [
+            "OE-PM-TR",
+            "OE-KO"
+        ],
+        "CHEMICALS": [
+            "OE-KO",
+            "OE-UC-OB"
+        ],
+        "METALS": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-KO",
+            "OE-NY"
+        ],
+        "EXPLOSIVES": [
+            "OE-KO",
+            "OE-NY"
+        ],
+        "FOOD": [
+            "OE-CR",
+            "OE-KO",
+            "OE-NY"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ]
+    },
+    "OE-UC": {
+        "ZUCO_CRYSTALS": [
+            "OE-UC"
+        ],
+        "SHIP_PARTS": [
+            "OE-UC"
+        ],
+        "ELECTRONICS": [
+            "OE-UC"
+        ],
+        "MACHINERY": [
+            "OE-UC",
+            "OE-BO"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ]
+    },
+    "OE-UC-AD": {
+        "DRONES": [
+            "OE-PM",
+            "OE-UC-AD",
+            "OE-UC-OB"
+        ],
+        "SHIP_PLATING": [
+            "OE-UC-AD"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ],
+        "UNSTABLE_COMPOUNDS": [
+            "OE-UC-AD"
+        ]
+    },
+    "OE-UC-OB": {
+        "CHEMICALS": [
+            "OE-KO",
+            "OE-UC-OB"
+        ],
+        "DRONES": [
+            "OE-PM",
+            "OE-UC-AD",
+            "OE-UC-OB"
+        ],
+        "RARE_METALS": [
+            "OE-UC-OB",
+            "OE-NY"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ]
+    },
+    "OE-NY": {
+        "RARE_METALS": [
+            "OE-UC-OB",
+            "OE-NY"
+        ],
+        "NARCOTICS": [
+            "OE-NY"
+        ],
+        "EXPLOSIVES": [
+            "OE-KO",
+            "OE-NY"
+        ],
+        "METALS": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-KO",
+            "OE-NY"
+        ],
+        "FOOD": [
+            "OE-CR",
+            "OE-KO",
+            "OE-NY"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ]
+    },
+    "OE-BO": {
+        "MACHINERY": [
+            "OE-UC",
+            "OE-BO"
+        ],
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ],
+        "EXOTIC_PLASMA": [
+            "OE-BO"
+        ]
+    },
+    "OE-W-XV": {
+        "FUEL": [
+            "OE-PM",
+            "OE-PM-TR",
+            "OE-CR",
+            "OE-KO",
+            "OE-UC",
+            "OE-UC-AD",
+            "OE-UC-OB",
+            "OE-NY",
+            "OE-BO",
+            "OE-W-XV"
+        ]
+    }
+}
